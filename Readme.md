@@ -16,7 +16,8 @@
 ---
 - [x] Listing users:
   > python cli.py users
-- [] Searching user by id
+- [x] Searching user by id:
+  > python cli.py user 1  # 1 is the user id to search for
 - [x] User creation:
   > python cli.py new --name SomeName --lastname SomeLastname
 - [] User deletion

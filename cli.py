@@ -32,6 +32,15 @@ def users():
     else:
         print("No users")
 
+@cli.command()
+@click.argument('id', type=int)
+def user(id):
+    users = json_manager.read_json()
+    user = next((user for user in users if user['id'] == id), None)
+    if not user:
+        print(f"User with id {id} not found")
+    else:
+        print(f"{user['id']} - {user['name']} - {user['lastname']}")
 
 if __name__ == "__main__":
     cli()
