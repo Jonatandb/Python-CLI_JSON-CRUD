@@ -2,13 +2,13 @@
 
 
 ### Setting up the project folder
-```python -m venv venv```
+> python -m venv venv
 
 ### Activating the environment
-```source venv/Scripts/activate```
+> source venv/Scripts/activate
 
 ### Installing the dependencies
-```pip install -r requirements.txt```
+> pip install -r requirements.txt
 
 ### Running the application
-```python cli.py```
+> python cli.py
