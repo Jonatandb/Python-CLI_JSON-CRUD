@@ -14,6 +14,13 @@
 > python cli.py
 
 ---
+- [x] Listing users:
+  > python cli.py users
+- [] Searching user by id
+- [] User creation
+- [] User deletion
+- [] User modification
+---
 
 ### Investigated sites
  - [Github Markdown - Sintaxis de escritura y formato básicos](https://docs.github.com/es/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
