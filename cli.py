@@ -7,8 +7,10 @@ def cli():
 
 @cli.command()
 def users():
-    data = json_manager.read_json()
-    print(data)
+    users = json_manager.read_json()
+    print('Id\tName\t\tLastname')
+    for user in users:
+        print( f"{user['id']}\t{user['name']}\t{user['lastname']}")
 
 if __name__ == '__main__':
     cli()
