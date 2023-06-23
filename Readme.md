@@ -1,4 +1,4 @@
-# Python-JSON-CRUD-CLI
+# Python CLI: JSON CRUD
 
 
 ### Setting up project folder
