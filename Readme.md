@@ -1,14 +1,14 @@
 # Python CLI: JSON CRUD
 
 
-### Setting up project folder
+### Setting up the project folder
 - python -m venv venv
 
-### Activating environment
+### Activating the environment
 - source venv/Scripts/activate
 
-### Installing dependencies
+### Installing the dependencies
 - pip install -r requirements.txt
 
-### Runnnig application
+### Running the application
 - python cli.py
