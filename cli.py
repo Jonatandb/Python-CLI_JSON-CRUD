@@ -4,6 +4,7 @@ import json_manager
 
 @click.group()
 def cli():
+    """ Python CLI JSON CRUD made by Jonatandb@gmail.com, supported by Click. """
     pass
 
 
@@ -55,6 +56,24 @@ def delete(id):
         users.remove(user)
         json_manager.write_json(users)
         print(f"User with id {id} deleted successfully")
+
+
+@cli.command()
+@click.argument('id', type=int)
+@click.option("--name", help="Name of the user")
+@click.option("--lastname", help="Lastname of the user")
+def update(id, name, lastname):
+    users = json_manager.read_json()
+    user = next((user for user in users if user['id'] == id), None)
+    if not user:
+        print(f"User with id {id} not found")
+    else:
+        if name is not None:
+            user['name'] = name
+        if lastname is not None:
+            user['lastname'] = lastname
+        json_manager.write_json(users)
+        print(f"User with id {id} updated successfully")
 
 
 if __name__ == "__main__":

@@ -1,4 +1,4 @@
-# Python CLI: JSON CRUD
+# Python CLI JSON CRUD supported by [Click](https://click.palletsprojects.com).
 
 
 ### Setting up the project folder
@@ -25,8 +25,14 @@
 - [x] User deletion:
   > python cli.py delete 1
   - 1 is the ID of the user to be deleted.
-- [] User modification
+- [x] User modification:
+  > python cli.py update 1 --name newName --lastname newLastname
+  - 1 is the ID of the user to be modified.
+  - --name must be follow for a string.
+  - --lastname must be follow for a string.
+  - --name and --lastname can be provided separately as well.
 ---
 
 ### Investigated sites
+ - [Click documentation](https://click.palletsprojects.com/en/8.1.x/)
  - [Github Markdown - Sintaxis de escritura y formato básicos](https://docs.github.com/es/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
