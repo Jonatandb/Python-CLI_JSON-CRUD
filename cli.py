@@ -32,6 +32,7 @@ def users():
     else:
         print("No users")
 
+
 @cli.command()
 @click.argument('id', type=int)
 def user(id):
@@ -41,6 +42,20 @@ def user(id):
         print(f"User with id {id} not found")
     else:
         print(f"{user['id']} - {user['name']} - {user['lastname']}")
+
+
+@cli.command()
+@click.argument('id', type=int)
+def delete(id):
+    users = json_manager.read_json()
+    user = next((user for user in users if user['id'] == id), None)
+    if not user:
+        print(f"User with id {id} not found")
+    else:
+        users.remove(user)
+        json_manager.write_json(users)
+        print(f"User with id {id} deleted successfully")
+
 
 if __name__ == "__main__":
     cli()

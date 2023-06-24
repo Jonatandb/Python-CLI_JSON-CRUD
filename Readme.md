@@ -14,14 +14,17 @@
 > python cli.py
 
 ---
-- [x] Listing users:
+- [x] User listing:
   > python cli.py users
-- [x] Searching user by id:
+- [x] User search by ID:
   > python cli.py user 1
-  - 1 is the user id to search for
+  - 1 is the ID of the user to search for.
 - [x] User creation:
   > python cli.py new --name SomeName --lastname SomeLastname
-- [] User deletion
+  - --name and --lastname are required.
+- [x] User deletion:
+  > python cli.py delete 1
+  - 1 is the ID of the user to be deleted.
 - [] User modification
 ---
 
