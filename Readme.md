@@ -1,6 +1,13 @@
 # Python CLI JSON CRUD supported by [Click](https://click.palletsprojects.com).
 
+<p align="center">
+    <a href="https://replit.com/@Jonatandb/Python-CLIJSON-CRUD">
+        <img src="./Python-CLI_JSON-CRUD_by_jonatandb@gmail.com.png" alt="Python CLI JSON CRUD made by Jonatandb"/>
+    </a>
+</p>
 
+## Live preview
+- https://replit.com/@Jonatandb/Python-CLIJSON-CRUD
 ### Setting up the project folder
 > python -m venv venv
 
